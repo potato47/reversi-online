@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_reversi",
+    "texture": "33ebfbee-cabd-4705-89eb-8045534f5cef",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1080,
+      1300
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1080,
+      1300
+    ]
+  }
+}

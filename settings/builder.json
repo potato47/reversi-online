@@ -1,0 +1,17 @@
+{
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.reversi-online",
+  "startScene": "d756747d-ba4b-4f7c-98ec-f96b5fabb8af",
+  "title": "reversi-online",
+  "webOrientation": "auto"
+}

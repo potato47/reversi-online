@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,SAAS,GAAG,OAAO,CAAC,WAAW,CAAC,CAAC;AACvC,IAAM,KAAK,GAAG,SAAS,CAAC,KAAK,CAAC;AAC9B,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,UAAM,EAAE,kBAAY;AAChB,SAAC,CAAC,WAAW,GAAG,EAAE,CAAC,OAAO,CAAC,sBAAsB,EAAE,EAAE,sBAAsB,EAAE,IAAI,EAAE,CAAC,CAAC;AACrF,SAAC,CAAC,WAAW,CAAC,EAAE,CAAC,WAAW,EAAE,UAAU,KAAK,EAAE;AAC3C,gBAAI,KAAK,KAAK,OAAO,EAAE;AACnB,iBAAC,CAAC,KAAK,GAAG,KAAK,CAAC,KAAK,CAAC;aACzB,MAAM,IAAI,KAAK,KAAK,OAAO,EAAE;AAC1B,iBAAC,CAAC,KAAK,GAAG,KAAK,CAAC,KAAK,CAAC;aACzB;SACJ,CAAC,CAAC;AACH,SAAC,CAAC,WAAW,CAAC,EAAE,CAAC,eAAe,EAAE,UAAU,MAAM,EAAE;AAChD,cAAE,CAAC,GAAG,CAAC,eAAe,GAAG,MAAM,CAAC,CAAC;AACjC,aAAC,CAAC,UAAU,GAAG,EAAE,CAAC,OAAO,CAAC,sBAAsB,GAAG,MAAM,EAAE,EAAE,sBAAsB,EAAE,IAAI,EAAE,CAAC,CAAC;AAC7F,aAAC,CAAC,WAAW,CAAC,UAAU,EAAE,CAAC;AAC3B,cAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,MAAM,CAAC,CAAC;SACjC,CAAC,CAAC;KACN;;AAED,eAAW,EAAA,uBAAG;AACV,SAAC,CAAC,WAAW,CAAC,UAAU,EAAE,CAAC;AAC3B,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,MAAM,CAAC,CAAC;KACjC;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "const Constants = require('Constants');\r\nconst STAND = Constants.STAND;\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    onLoad: function () {\r\n        G.queueSocket = io.connect('127.0.0.1:4747/queue', { 'force new connection': true });\r\n        G.queueSocket.on('set stand', function (stand) {\r\n            if (stand === 'black') {\r\n                G.stand = STAND.BLACK;\r\n            } else if (stand === 'white') {\r\n                G.stand = STAND.WHITE;\r\n            }\r\n        });\r\n        G.queueSocket.on('match success', function (roomId) {\r\n            cc.log('match success' + roomId);\r\n            G.roomSocket = io.connect('127.0.0.1:4747/rooms' + roomId, { 'force new connection': true });\r\n            G.queueSocket.disconnect();\r\n            cc.director.loadScene('game');\r\n        });\r\n    },\r\n\r\n    onBtnCancel() {\r\n        G.queueSocket.disconnect();\r\n        cc.director.loadScene('menu');\r\n    }\r\n});\r\n"
+  ]
+}

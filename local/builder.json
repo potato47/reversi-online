@@ -1,0 +1,16 @@
+{
+  "androidStudio": false,
+  "apiLevel": "android-10",
+  "buildPath": "./build",
+  "debug": false,
+  "keystoreAlias": "",
+  "keystoreAliasPassword": "",
+  "keystorePassword": "",
+  "keystorePath": "",
+  "platform": "web-desktop",
+  "previewHeight": 576,
+  "previewWidth": 324,
+  "sourceMaps": false,
+  "template": "default",
+  "useDebugKeystore": true
+}

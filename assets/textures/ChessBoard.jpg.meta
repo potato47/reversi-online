@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "6e8bc2a4-4a11-42b1-80f3-1426b8316745",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "ChessBoard": {
+      "ver": "1.0.3",
+      "uuid": "fc919b9d-5b72-48bf-9fcd-9dc49b353c11",
+      "rawTextureUuid": "6e8bc2a4-4a11-42b1-80f3-1426b8316745",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 535,
+      "height": 535,
+      "rawWidth": 535,
+      "rawHeight": 535,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

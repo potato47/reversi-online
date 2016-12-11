@@ -1,0 +1,47 @@
+2016-12-11T03:32:16.534Z - normal: Load ~/.CocosCreator/settings.json
+2016-12-11T03:32:16.540Z - normal: checking language setting...
+2016-12-11T03:32:16.540Z - normal: Language: zh
+2016-12-11T03:32:17.654Z - success: protocol editor-framework registered
+2016-12-11T03:32:17.654Z - success: protocol app registered
+2016-12-11T03:32:17.655Z - success: protocol packages registered
+2016-12-11T03:32:17.655Z - success: protocol theme registered
+2016-12-11T03:32:17.655Z - success: protocol unpack registerred
+2016-12-11T03:32:17.852Z - normal: connected!
+2016-12-11T03:32:17.864Z - normal: Check project E:\CocosProject\reversi-online
+2016-12-11T03:32:17.871Z - normal: Initializing Cocos Creator Editor
+2016-12-11T03:32:18.216Z - normal: Initializing Cocos2d
+2016-12-11T03:32:18.442Z - normal: Initializing Asset Database
+2016-12-11T03:32:18.466Z - success: protocol uuid registerred
+2016-12-11T03:32:18.466Z - success: protocol db registerred
+2016-12-11T03:32:18.466Z - success: protocol thumbnail registerred
+2016-12-11T03:32:18.466Z - normal: Loading editor/builtin packages
+2016-12-11T03:32:18.592Z - success: assets loaded
+2016-12-11T03:32:18.595Z - success: builder loaded
+2016-12-11T03:32:18.598Z - success: hierarchy loaded
+2016-12-11T03:32:18.600Z - success: inspector loaded
+2016-12-11T03:32:18.601Z - success: keystore loaded
+2016-12-11T03:32:18.604Z - success: node-library loaded
+2016-12-11T03:32:18.606Z - success: preferences loaded
+2016-12-11T03:32:18.625Z - success: project-importer loaded
+2016-12-11T03:32:18.627Z - success: project-settings loaded
+2016-12-11T03:32:18.630Z - success: ui-kit loaded
+2016-12-11T03:32:18.631Z - success: ui-grid loaded
+2016-12-11T03:32:18.634Z - success: scene loaded
+2016-12-11T03:32:18.635Z - success: sprite-editor loaded
+2016-12-11T03:32:18.640Z - success: timeline loaded
+2016-12-11T03:32:18.641Z - normal: Loading builtin packages
+2016-12-11T03:32:18.644Z - success: asset-db-debugger loaded
+2016-12-11T03:32:18.645Z - success: code-editor loaded
+2016-12-11T03:32:18.646Z - success: color-picker loaded
+2016-12-11T03:32:18.648Z - success: console loaded
+2016-12-11T03:32:18.650Z - success: package-manager loaded
+2016-12-11T03:32:18.653Z - success: tester loaded
+2016-12-11T03:32:18.655Z - success: ui-kit-preview-extra loaded
+2016-12-11T03:32:18.656Z - success: ui-kit-preview loaded
+2016-12-11T03:32:18.657Z - success: ui-tree loaded
+2016-12-11T03:32:18.699Z - normal: Initializing project E:\CocosProject\reversi-online
+2016-12-11T03:32:18.703Z - normal: Loading packages
+2016-12-11T03:32:18.708Z - normal: Watching packages
+2016-12-11T03:32:18.721Z - normal: Run Application
+2016-12-11T03:32:19.516Z - success: preview server running at http://localhost:7456
+2016-12-11T03:32:23.271Z - normal: 1.3.2

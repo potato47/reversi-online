@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,UAAM,EAAE,kBAAY;AAChB,SAAC,CAAC,YAAY,GAAG,EAAE,CAAC,OAAO,CAAC,gBAAgB,CAAC,CAAC;;AAE9C,SAAC,CAAC,UAAU,GAAG,EAAE,CAAC,OAAO,CAAC,qBAAqB,EAAC,EAAC,sBAAsB,EAAE,IAAI,EAAC,CAAC,CAAC;KACnF;;AAED,cAAU,EAAA,sBAAG;AACT,SAAC,CAAC,UAAU,CAAC,UAAU,EAAE,CAAC;AAC1B,UAAE,CAAC,QAAQ,CAAC,SAAS,CAAC,OAAO,CAAC,CAAC;KAClC;CACJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    onLoad: function () {\r\n        G.globalSocket = io.connect('127.0.0.1:4747');\r\n        //断开连接后再重新连接需要加上{'force new connection': true}\r\n        G.hallSocket = io.connect('127.0.0.1:4747/hall',{'force new connection': true});\r\n    },\r\n\r\n    onBtnStart() {\r\n        G.hallSocket.disconnect();\r\n        cc.director.loadScene('match');\r\n    }\r\n});\r\n"
+  ]
+}

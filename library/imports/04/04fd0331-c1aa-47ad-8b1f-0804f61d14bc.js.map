@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,MAAM,CAAC,CAAC,GAAG;AACP,gBAAY,EAAC,IAAI;AACjB,cAAU,EAAC,IAAI;AACf,eAAW,EAAC,IAAI;AAChB,cAAU,EAAC,IAAI;AACf,eAAW,EAAC,IAAI;AAChB,gBAAY,EAAC,IAAI;AACjB,SAAK,EAAC,IAAI;CACb,CAAA",
+  "file": "unknown",
+  "sourcesContent": [
+    "window.G = {\r\n    globalSocket:null,//全局\r\n    hallSocket:null,//大厅\r\n    queueSocket:null,//队列\r\n    roomSocket:null,//房间\r\n    gameManager:null,\r\n    chessManager:null,\r\n    stand:null,\r\n}"
+  ]
+}

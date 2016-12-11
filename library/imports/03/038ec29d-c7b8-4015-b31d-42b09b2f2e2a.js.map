@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [],
+  "mappings": "AAAA,IAAM,SAAS,GAAG,OAAO,CAAC,WAAW,CAAC,CAAC;AACvC,IAAM,UAAU,GAAG,SAAS,CAAC,UAAU,CAAC;AACxC,EAAE,CAAC,KAAK,CAAC;AACL,eAAS,EAAE,CAAC,SAAS;;AAErB,cAAU,EAAE;AACR,YAAI,EAAC;AACD,uBAAQ,EAAE;AACV,gBAAI,EAAC,CAAC,EAAE,CAAC,WAAW,CAAC;SACxB;AACD,aAAK,EAAC,UAAU,CAAC,IAAI;AACrB,YAAI,EAAC;AACD,eAAG,EAAA,eAAE;AACD,uBAAO,IAAI,CAAC,KAAK,CAAC;aACrB;AACD,eAAG,EAAA,aAAC,KAAK,EAAC;AACN,oBAAI,CAAC,KAAK,GAAG,KAAK,CAAC;AACnB,oBAAG,KAAK,KAAK,UAAU,CAAC,KAAK,EAAC;AAC1B,wBAAI,CAAC,YAAY,CAAC,EAAE,CAAC,MAAM,CAAC,CAAC,WAAW,GAAG,IAAI,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;iBAC3D,MAAK,IAAG,KAAK,KAAK,UAAU,CAAC,KAAK,EAAC;AAChC,wBAAI,CAAC,YAAY,CAAC,EAAE,CAAC,MAAM,CAAC,CAAC,WAAW,GAAG,IAAI,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;iBAC3D,MAAI;AACD,wBAAI,CAAC,YAAY,CAAC,EAAE,CAAC,MAAM,CAAC,CAAC,WAAW,GAAG,IAAI,CAAC;iBACnD;aACJ;SACJ;AACD,YAAI,EAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAC,CAAC,CAAC;AACd,cAAM,EAAC,CAAC;KACX;;AAED,UAAM,EAAA,kBAAE;AACJ,YAAI,CAAC,IAAI,GAAG,UAAU,CAAC,IAAI,CAAC;KAC/B;;CAEJ,CAAC,CAAC",
+  "file": "unknown",
+  "sourcesContent": [
+    "const Constants = require('Constants');\r\nconst CHESS_TYPE = Constants.CHESS_TYPE;\r\ncc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n        pics:{\r\n            default:[],\r\n            type:[cc.SpriteFrame]\r\n        },\r\n        _type:CHESS_TYPE.NONE,\r\n        type:{\r\n            get(){\r\n                return this._type;\r\n            },\r\n            set(value){\r\n                this._type = value;\r\n                if(value === CHESS_TYPE.BLACK){\r\n                    this.getComponent(cc.Sprite).spriteFrame = this.pics[0];\r\n                }else if(value === CHESS_TYPE.WHITE){\r\n                    this.getComponent(cc.Sprite).spriteFrame = this.pics[1];\r\n                }else{\r\n                    this.getComponent(cc.Sprite).spriteFrame = null;\r\n                }\r\n            }\r\n        },\r\n        coor:cc.p(0,0),//坐标\r\n        chance:0//周围可翻转棋子的可能性\r\n    },\r\n\r\n    onLoad(){\r\n        this.type = CHESS_TYPE.NONE;\r\n    }\r\n\r\n});\r\n"
+  ]
+}
